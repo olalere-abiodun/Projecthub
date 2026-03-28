@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import hero from "../assets/heroimg.png";
 import Icon from "../assets/Icon.svg";
 import Icon1 from "../assets/Icon1.png";
@@ -9,12 +10,13 @@ import Icon5 from "../assets/Icon5.png";
 import Icon6 from "../assets/Icon6.png";
 import seal from "../assets/seal.png";
 import iconbtn from "../assets/iconbtn.png";
+import Icon7 from "../assets/icon7.png";
 
 function Index() {
   return (
     <div>
       <Header />
-      <main className="hero px-[60px] py-[40px] flex gap-[48px]">
+      <main className="hero px-[60px] py-[10px] flex gap-[48px] mt-[93px]">
         <div className="flex flex-col gap-[25px] w-[614px] h-[588px]">
           <section className="flex items-center justify-center align-middle w-[614px] h-[58px] bg-[#DBE1FF] rounded-3xl">
             <h1 className="font-bold text-[20px]">
@@ -37,7 +39,24 @@ function Index() {
           </section>
         </div>
         <div>
-          <img src={hero} alt="Hero Image" />
+          <section className=" tag w-[380px] p-[30px]">
+            <div className="flex flex-row  justify-between mb-[16px] align-middle items-center space-between">
+               <div className="icon2 px-[14px] py-[18px]">
+              <img src={Icon7} alt="" />
+            </div>
+            <div className="bg-[#BC4800] rounded-full text-white text-[12px] font-bold h-[24px] w-[80px] flex items-center justify-center">
+              <h2>In Review</h2>
+            </div>
+
+            </div>
+            <h2 className="font-bold text-[18px] mt-[24px]">Thesis_Draft_V4.php</h2>
+            <p className="text-[14px] mt-[8px] font-light">Submitted to Dr. Smith - 2 days ago</p>
+            <div class="progress-container mt-[24px]">
+              <div class="progress-bar"></div>
+            </div>
+          </section>
+
+          <img src={hero} alt="Hero Image" className="mt-[110px]"  />
         </div>
       </main>
       <section className="flex justify-between bg-[#F3F4F6] py-[48px] px-[24px] text-[20px] text-[#191C1E] font-bold ">
@@ -46,6 +65,8 @@ function Index() {
         <h3>MIT REPOSITORY</h3>
         <h3>STANFORD SCHOLAR</h3>
       </section>
+
+      {/* capabilities */}
       <section className="feature-section">
         <div className="flex justify-between px-[25px]">
           <div className="w-[571px]">
@@ -63,7 +84,8 @@ function Index() {
             <img src={Icon} alt="" className="w-4" />
           </div>
         </div>
-
+        
+        {/* grid  */}
         <div className="grid grid-cols-3 gap-[20px] px-[25px] align-middle justify-center mt-[80px]">
           {/* Row 1 - Left (2/3) */}
           <div className="col-span-2 rounded-[12px] border-0 shadow p-[40px]">
@@ -165,6 +187,7 @@ function Index() {
             </section>
           </div>
         </section>
+        <Footer />
     </div>
   );
 }

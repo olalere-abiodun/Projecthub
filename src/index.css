@@ -18,6 +18,15 @@ header {
     height: 56px;
     border-radius: 12px;
 }
+.icon2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgb(0, 74, 198, 0.1);
+}
 
 .btn-linear {
     background: linear-gradient(90deg, #004AC6 0%, #2563EB 100%);
@@ -30,7 +39,7 @@ header {
     cursor: pointer;
 }
 .feature-section {
-    margin-top: 128px;
+    margin-top: 100px;
 }
 .bullet {
     width: 8px;
@@ -54,4 +63,30 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: 0 1px 2px 0px rgba(255,255,255,0.5);
+}
+.progress-container {
+  width: 100%;
+  max-width: 400px;
+  height: 10px;
+  background-color: #d9d9d9; /* light grey */
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 70%; /* change this to control progress */
+  background-color: #1e4db7; /* blue color */
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+.tag {
+    position: absolute ;
+    z-index: 10;
+    transform: translateY(-5px);
+    /* transform: translateX(0px); */
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px 0px rgba(0,74,198,0.2), 0 2px 4px 0px rgba(0, 12, 40, 0.06);
 }
