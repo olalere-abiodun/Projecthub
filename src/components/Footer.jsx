@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="flex flex-row justify-between bg-gray-100 p-[48px] mt-5">
+        <footer className="flex flex-col md:flex-row gap-5 md:gap-0 text-center md:justify-between bg-gray-100 p-[30px] md:p-[48px] mt-3 md:mt-5">
             <div className="flex flex-col">
                 <p className="text-[12px] font-medium">&copy; 2026 ProjectHub. ESPAM FORMATION - All rights reserved.</p>
                 <p className="text-[10px] font-extralight">
@@ -8,7 +8,7 @@ function Footer() {
                 </p>
             </div>
             <nav>
-            <ul className="flex text-[#475569] font-[16px] space-x-[32px]">
+            <ul className="flex text-[#475569] font-[16px] space-x-[16px] md:space-x-[32px]">
                 <li><a href="#">PRIVACY</a></li>
                 <li><a href="#">TERMS OF USE</a></li>
                 <li><a href="#">CONTACT REGISTRY</a></li>

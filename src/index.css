@@ -41,6 +41,11 @@ header {
 .feature-section {
     margin-top: 100px;
 }
+@media (max-width: 768px) {
+    .feature-section {
+        margin-top: 60px;
+    }
+}
 .bullet {
     width: 8px;
     height: 8px;
@@ -89,4 +94,11 @@ header {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 4px 20px 0px rgba(0,74,198,0.2), 0 2px 4px 0px rgba(0, 12, 40, 0.06);
+}
+@media (max-width: 768px) {
+    .tag {
+        transform: none;
+        margin-left: 0;
+        position: relative; /* optional but usually better for mobile */
+    }
 }
