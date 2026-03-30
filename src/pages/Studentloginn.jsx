@@ -7,7 +7,7 @@ import Nav from "../components/Nav";
 import shield from "../assets/Shield.svg";
 import grade from "../assets/grade.svg";
 import Iconin from "../assets/Iconin.svg";
-function Signup() {
+function Login() {
     return (
         <div>
             <div className="">
@@ -69,4 +69,4 @@ function Signup() {
         </div>
     );
 }
-export default Signup;
+export default Login;

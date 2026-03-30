@@ -3,6 +3,7 @@ import './App.css'
 import Index from './pages/Index'
 import Signup from './pages/Signup'
 import Studentloginn from './pages/Studentloginn'
+import Adminlogin from './pages/Adminlogin'
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Studentloginn />} />
+        <Route path="/admin" element={<Adminlogin />} />
+        
       </Routes>
     </BrowserRouter>
   )
