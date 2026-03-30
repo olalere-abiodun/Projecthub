@@ -8,7 +8,7 @@ function Footer() {
                 </p>
             </div>
             <nav>
-            <ul className="flex text-[#475569] font-[16px] space-x-[16px] md:space-x-[32px]">
+            <ul className="flex text-[#475569] font-[12px] md:font-[16px] space-x-[12px] md:space-x-[32px]">
                 <li><a href="#">PRIVACY</a></li>
                 <li><a href="#">TERMS OF USE</a></li>
                 <li><a href="#">CONTACT REGISTRY</a></li>
