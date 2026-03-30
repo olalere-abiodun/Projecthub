@@ -1,8 +1,13 @@
 import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import Nav from "./Nav";
 import menu from "../assets/icon-menu.svg";
 
 function Header() {
+    const navigate = useNavigate();
+    const handleGetStarted = () => {
+        navigate("/signup");
+    }
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
@@ -11,7 +16,9 @@ function Header() {
             <Nav />
             <div className="flex space-x-4 hidden md:block">
                 <a href="#" className="px-5 py-2 hover:underline">Login</a>
-                <button className="btn-linear px-4 py-2">Get Started</button>
+                <button className="btn-linear px-4 py-2"
+                    onClick={handleGetStarted}
+                >Get Started</button>
                 
             </div>
             {/* Mobile Menu Button */}

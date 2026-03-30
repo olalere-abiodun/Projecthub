@@ -66,9 +66,9 @@ function Index() {
       </section>
 
       {/* capabilities */}
-      <section className="feature-section">
+      <section className="feature-section" id="features">
         <div className="flex flex-col md:flex-row gap-[40px] md:justify-between px-[25px]">
-          <div className="w-fullmd:w-[571px]">
+          <div className="w-full md:w-[571px]">
             <h4 className="text-[#004AC6] font-bold text-[12px] md:text-[14px] tracking-[2.8px]">
               CORE CAPABILITIES
             </h4>
