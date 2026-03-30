@@ -18,7 +18,7 @@ function Signup() {
                         <h6 className="font-[12px] font-light">Already Have an Account? <a href="/login" className="text-blue-500 font-bold">Login</a></h6>
                     </div>
                 </section>
-                <div className="flex flex-row gap-[32px] mt-[32px] justify-center w-[512px] text-[10px] font-medium text-gray-400">
+                <div className="flex flex-row gap-[32px] mt-[32px] justify-center w-full md:w-[512px] text-[10px] font-medium text-gray-400">
                     <section className="flex items-center gap-[3px]">
                         <img src={shield} alt="Shield" className="w-4 h-4" />
                         <p className="whitespace-nowrap">SECURE PORTAL</p>
