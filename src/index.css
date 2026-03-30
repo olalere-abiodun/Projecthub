@@ -118,6 +118,13 @@ header {
     background-color: #E7E8EA;
     padding: 13px 16px;
 }
+@media (max-width: 768px) {
+    .input {
+        width: 100%;
+    }
+    
+}
+
 .shortinput {
     width: 200px;
     height: 44px;

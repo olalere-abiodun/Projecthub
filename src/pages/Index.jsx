@@ -9,8 +9,8 @@ import Icon4 from "../assets/Icon4.svg";
 import Icon5 from "../assets/Icon5.png";
 import Icon6 from "../assets/Icon6.png";
 import seal from "../assets/seal.png";
-import iconbtn from "../assets/iconbtn.png";
-import Icon7 from "../assets/icon7.png";
+import Iconbtn from "../assets/Iconbtn.png";
+import Icon7 from "../assets/Icon7.png";
 
 function Index() {
   return (
@@ -175,7 +175,7 @@ function Index() {
       </p>
 
       <button className="iconbtn rounded-lg bg-white mt-[32px]">
-        <img src={iconbtn} alt="" />
+        <img src={Iconbtn} alt="" />
         Access Archive
       </button>
     </div>

@@ -21,16 +21,16 @@ function Adminlogin() {
             </header>
             <div className="">
                 
-                <section className="flex flex-row justify-center w-full md:w-[1050px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] rounded-2xl bg-white mb-[95px] mx-auto">
-                    <div className="w-[549px] h-[544px] p-[25px] md:p-[48px] rounded-l-2xl bg-icon2">
+                <section className="flex flex-col md:flex-row justify-center w-full md:w-[1050px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] rounded-2xl bg-white mb-[95px] mx-auto">
+                    <div className="w-full md:w-[549px] md:h-[544px] p-[25px] md:p-[48px] rounded-l-2xl bg-icon2">
                       <section className="flex flex-row items-center gap-2 w-[200px] px-[12px] py-[6px] bg-[rgba(0,73,198,0.21)] rounded-3xl">
                         <img src={shield} alt="" className="w-4 h-4" />
                         <h3 className="font-extrabold text-[12px] text-[#004AC6]">
                             ADMINISTRATIVE PORTAL
                         </h3>    
-                    </section> 
+                        </section> 
 
-                    <h1 className="text-[48px] font-extrabold mt-[36px] w-[475px] leading-[45px] text-[#191C1E]">Institutional <span style={{color:"#004AC6"}}>Excellence</span> Starts With Oversight.</h1>
+                    <h1 className="text-[28px] md:text-[48px] font-extrabold mt-[36px] md:w-[475px] leading-[45px] text-[#191C1E]">Institutional <span style={{color:"#004AC6"}}>Excellence</span> Starts With Oversight.</h1>
                     <p className="font-normal text-[18px] mt-[24px] w-[384px] text-[#434655]">
                         Access the central management hub for student submissions, academic archives, and institutional reporting.
                     </p>

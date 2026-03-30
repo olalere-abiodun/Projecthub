@@ -11,14 +11,14 @@ function Login() {
     return (
         <div>
             <div className="">
-                <section className="flex flex-row justify-center w-full md:w-[1050px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] rounded-2xl bg-white mt-[100px] mb-[95px] mx-auto">
-                    <div className="w-[549px] h-[544px] p-[25px] md:p-[48px] rounded-l-2xl bg-icon">
+                <section className="flex flex-col md:flex-row justify-center w-full md:w-[1050px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] rounded-2xl bg-white md:mt-[100px] mb-[50px] md:mb-[95px] mx-auto">
+                    <div className="w-full md:w-[549px] md:h-[544px] p-[25px] md:p-[48px] rounded-l-2xl bg-icon">
                      <section className="flex flex-row items-center gap-2">
                         <img src={grade} alt="" className="w-4 h-4" />
                         <h3 className="font-extrabold text-[20px] tracking-[-1px]">ProjectHub</h3>    
                     </section>   
-                    <h1 className="text-[36px] font-extrabold mt-[49px]">Welcome back to institutional Excellence.</h1>
-                    <p className="font-normal text-[18px] mt-[24px] w-[384px] text-[#434655]">
+                    <h1 className="text-[28px] md:text-[36px] font-extrabold mt-[49px]">Welcome back to institutional Excellence.</h1>
+                    <p className="font-normal text-[14px] md:text-[18px] mt-[24px] w-[384px] text-[#434655]">
                         Access your academic submissions, review feedback, and manage your project documents with ease.
                     </p>
                     <section className=" tag2 w-full md:w-[380px] p-[15px] md:p-[24px] mt-[48px]">
