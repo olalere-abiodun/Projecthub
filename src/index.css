@@ -22,8 +22,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgb(0, 74, 198, 0.1);
 }
@@ -91,6 +91,16 @@ header {
     transform: translateY(-5px);
     /* transform: translateX(0px); */
     margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px 0px rgba(0,74,198,0.2), 0 2px 4px 0px rgba(0, 12, 40, 0.06);
+}
+
+.tag2 {
+    /* position: absolute ;
+    z-index: 10;
+    transform: translateY(-5px); */
+    /* transform: translateX(0px); */
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 4px 20px 0px rgba(0,74,198,0.2), 0 2px 4px 0px rgba(0, 12, 40, 0.06);

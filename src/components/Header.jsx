@@ -15,7 +15,7 @@ function Header() {
             <h1 className="text-2xl font-bold">ProjectHub</h1>
             <Nav />
             <div className="flex space-x-4 hidden md:block">
-                <a href="#" className="px-5 py-2 hover:underline">Login</a>
+                <Link to="/login" className="px-5 py-2 hover:underline">Login</Link>
                 <button className="btn-linear px-4 py-2"
                     onClick={handleGetStarted}
                 >Get Started</button>
