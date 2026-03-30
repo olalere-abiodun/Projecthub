@@ -145,3 +145,9 @@ header {
         position: relative; /* optional but usually better for mobile */
     }
 }
+.bg-icon {
+  background-color: #F3F4F6;
+  background-image: url(assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}

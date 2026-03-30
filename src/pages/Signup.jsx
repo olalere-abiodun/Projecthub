@@ -15,7 +15,7 @@ function Signup() {
 
                     <Form />
                     <div className="text-center mt-[64px]">
-                        <h6 className="font-[14px] font-light">Already Have an Account? <a href="/login" className="text-blue-500 font-bold">Login</a></h6>
+                        <h6 className="font-[12px] font-light">Already Have an Account? <a href="/login" className="text-blue-500 font-bold">Login</a></h6>
                     </div>
                 </section>
                 <div className="flex flex-row gap-[32px] mt-[32px] justify-center w-[512px] text-[10px] font-medium text-gray-400">
