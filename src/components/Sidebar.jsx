@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
-import Dashboard from "../assets/Dashboard.svg";
-import Submission from "../assets/Submission.svg";
-import Upload from "../assets/Upload.svg";
-import Settings from "../assets/Settings.svg";
-import UploadIcon from "../assets/Iconupload.svg";
+import { Link, NavLink } from "react-router-dom";
+import { MdOutlineDashboard } from "react-icons/md";
+import { FaRegFileLines } from "react-icons/fa6";
+import { BiCloudUpload } from "react-icons/bi";
+import { MdOutlineSettings } from "react-icons/md";
+import { MdHelpOutline } from "react-icons/md";
+import { MdLogout } from "react-icons/md";
+
 import Help from "../assets/Help.svg";
 import Logout from "../assets/Logout.svg";
 function Sidebar() {
@@ -13,41 +15,36 @@ function Sidebar() {
                 <button className="flex flex-row gap-2 items-center justify-center w-full h-[48px] btn-linear px-6 py-3 mb-[40px]"> + New Submission </button>
             </header>
             <aside>
-                <nav className="flex flex-col gap-[8px]">
-                <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                    <img src={Dashboard} alt="Dashboard" />
-                    <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Dashboard</Link>
-                </section>
-                <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                    <img src={UploadIcon} alt="Upload Archive" />
-                    <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Upload Archive</Link>
-                </section>
-
-                <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                    <img src={Submission} alt="Submissions" />
-                    <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Submissions</Link>
-                </section>
-
-                <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                    <img src={Upload} alt="Messages" />
-                    <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Messages</Link>
-                </section>
-                <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                    <img src={Settings} alt="Settings" />
-                    <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Settings</Link>
-                </section>
+                <nav className="flex flex-col">
+                <NavLink className={"flex flex-row gap-[12px] px-[16px] py-[12px] h-[44px] rounded-lg bg-[#F3F4F6]"}>
+                    <MdOutlineDashboard className="text-[#64748B]" size={18}/>
+                    <span className="text-[#64748B] text-[14px] font-medium">Dashboard</span>
+                </NavLink>
+                <NavLink className={"flex flex-row gap-[12px] px-[16px] py-[12px] h-[44px] rounded-lg bg-[#F3F4F6]"}>
+                    <FaRegFileLines className="text-[#64748B]" size={18}/>
+                    <span className="text-[#64748B] text-[14px] font-medium">Submission</span>
+                </NavLink>
+                <NavLink className={"flex flex-row gap-[12px] px-[16px] py-[12px] h-[44px] rounded-lg bg-[#F3F4F6]"}>
+                    <BiCloudUpload className="text-[#64748B]" size={18}/>
+                    <span className="text-[#64748B] text-[14px] font-medium">Upload Archive</span>
+                </NavLink>
+                <NavLink className={"flex flex-row gap-[12px] px-[16px] py-[12px] h-[44px] rounded-lg bg-[#F3F4F6]"}>
+                    <MdOutlineSettings className="text-[#64748B]" size={18}/>
+                    <span className="text-[#64748B] text-[14px] font-medium">Settings</span>
+                </NavLink>
+                
             </nav>
             <footer className="border-[#E2E8F0]-1 py-[12px]">
                 <div>
                     <nav>
-                        <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                            <img src={Help} alt="Help Center" />
-                            <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Help Center</Link>
-                        </section>
-                        <section className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
-                            <img src={Logout} alt="Logout" />
-                            <Link to="" className="text-gray-700 hover:text-gray-900 font-medium">Logout</Link>
-                        </section>
+                        <NavLink className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
+                            <MdHelpOutline className="text-[#64748B]" size={18}/>
+                            <span to="" className="text-gray-700 hover:text-gray-900 font-medium">Help Center</span>
+                        </NavLink>
+                       <NavLink className="flex flex-row gap-[12px] px-[12px] py-[8px] rounded-lg bg-[#F3F4F6]">
+                            <MdLogout className="text-[#64748B]" size={18}/>
+                            <span to="" className="text-gray-700 hover:text-gray-900 font-medium">Help Center</span>
+                        </NavLink>
 
                     </nav>
                 </div>
