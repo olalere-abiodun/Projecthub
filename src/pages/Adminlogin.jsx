@@ -13,10 +13,12 @@ function Adminlogin() {
         <div>
             <header>
                 <section className="flex flex-row items-center justify-center gap-2 w-full">
-                <img src={grade} alt="" className="w-4 h-4" />
+                <Link to="/">
+                    <img src={grade} alt="" className="w-4 h-4" />
                 <h3 className="font-extrabold text-[20px] tracking-[-1px]">
                     ProjectHub
-                </h3>    
+                </h3>
+                </Link>    
                 </section> 
             </header>
             <div className="">

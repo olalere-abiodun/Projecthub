@@ -4,6 +4,7 @@ import Index from './pages/Index'
 import Signup from './pages/Signup'
 import Studentloginn from './pages/Studentloginn'
 import Adminlogin from './pages/Adminlogin'
+import Userdashboard from './pages/Userdashboard'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Studentloginn />} />
         <Route path="/admin" element={<Adminlogin />} />
+        <Route path="/dashboard" element={<Userdashboard />} />
         
       </Routes>
     </BrowserRouter>
