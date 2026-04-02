@@ -13,7 +13,9 @@ function Userdashboard() {
         };
     return (
         <div className="min-h-screen flex flex-row gap-0">
-            <Sidebar />
+            <Sidebar 
+            title="Admin Dashboard"
+            />
             <main className="flex-1 flex flex-col">
                 <Shortheader 
                 title="Academic Project Review"
@@ -22,7 +24,7 @@ function Userdashboard() {
                 
                 <section className=" flex-1 p-[32px]">
                     <div>
-                        <h1 className="text-[36px] font-bold text-[#191C1E]">Submission Management</h1>
+                        <h1 className="text-[36px] font-bold text-[#191C1E]">Admin Dashboard</h1>
                         <p className="text-[16px] text-[#434655]">Curating institutional excellence through rigorous academic validation.</p>
                     </div>
                     <div className="grid grid-cols-[2fr_1fr_1fr] gap-6 h-[192px] mt-[48px] mb-[48px]">

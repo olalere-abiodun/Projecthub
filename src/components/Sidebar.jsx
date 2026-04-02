@@ -8,7 +8,7 @@ import { MdLogout } from "react-icons/md";
 import home from "../assets/HomeIcon.svg";
 
 
-function Sidebar() {
+function Sidebar(props) {
     const linkClass = ({ isActive }) =>
         `flex flex-row gap-[12px] px-[16px] py-[12px] h-[44px] rounded-lg 
         ${isActive ? "bg-[#EFF6FF] text-[#2563EB] border-r-4 border-[#2563EB]" : "bg-transparent text-[#64748B]"}`;
@@ -23,7 +23,7 @@ function Sidebar() {
                         <img src={home} alt="" />
                     </div>
                     <div>
-                        <h1 className="text-[18px] font-bold text-[#0F172A] tracking-tight">Student Portal</h1>
+                        <h1 className="text-[18px] font-bold text-[#0F172A] tracking-tight">{props.title}</h1>
                         <p className="text-[10px] font-semibold text-[#434655]">ACADEMIC YEAR 2025-2026</p>
                     </div>
                 </section>
