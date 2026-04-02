@@ -16,7 +16,7 @@ function Sidebar() {
     const iconClass = (isActive) =>
         isActive ? "text-[#1D4ED8]" : "text-[#64748B]";
     return (
-        <div className="w-[256px] h-screen bg-white px-[21px] py-[17px] hidden md:flex flex-col gap-6">
+        <div className="w-[256px] min-h-screen bg-white px-[21px] py-[17px] hidden md:flex flex-col gap-6 border-r border-[#E2E8F0]">
             <header className="flex flex-col gap-6 mb-[40px]">
                 <section className="flex flex-row gap-3">
                     <div className="bg-[#2563EB] p-[10px] rounded-[12px] h-[40px] w-[40px]">
