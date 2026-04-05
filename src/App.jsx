@@ -6,6 +6,7 @@ import Studentloginn from './pages/Studentloginn'
 import Adminlogin from './pages/Adminlogin'
 import Admindashboard from './pages/Admindashboard'
 import Submission from './pages/Submission'
+import Review from './pages/Review'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/admin" element={<Adminlogin />} />
         <Route path="/dashboard" element={<Admindashboard />} />
         <Route path="/submission" element={<Submission />} />
+        <Route path="/review" element={<Review />} />
         
       </Routes>
     </BrowserRouter>

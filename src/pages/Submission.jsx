@@ -1,7 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";  
 import Shortheader from "../components/Innerheader";
-import { MdOutlineFileDownload } from "react-icons/md";
+import { MdDownload, MdOutlineFileDownload } from "react-icons/md";
 import { MdCheckCircleOutline } from "react-icons/md";
 import { MdOutlineCancel } from "react-icons/md";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
@@ -115,11 +115,14 @@ function AdminSubmission() {
                 <table className="w-full">
                   <thead>
                     <tr>
+                      <th>
+                        <input type="checkbox" />
+                      </th>
                       <th className="text-left text-[12px] font-bold text-[#434655] tracking-[1.2px] px-[32px] py-[16px]">
                         STUDENT NAME
                       </th>
                       <th className="text-left text-[12px] font-bold text-[#434655] tracking-[1.2px] px-[32px] py-[16px]">
-                        FILE NAME
+                        SUBMISSION TITLE
                       </th>
                       <th className="text-left text-[12px] font-bold text-[#434655] tracking-[1.2px] px-[32px] py-[16px]">
                         DEPARTMENT
@@ -134,6 +137,9 @@ function AdminSubmission() {
                   </thead>
                   <tbody>
                     <tr>
+                      <td>
+                        <input type="checkbox" />
+                      </td>
                       <td className="text-[14px] font-medium text-[#191C1E] p-[30px]">
                         Bob Smith
                       </td>
@@ -151,7 +157,7 @@ function AdminSubmission() {
                         </div>
                       </td>
                       <td className="text-[14px] font-medium text-[#191C1E] p-[30px] flex flex-row gap-4">
-                        <MdOutlineRemoveRedEye size={20} />
+                        <MdOutlineFileDownload size={20} />
                         <MdCheckCircleOutline size={20} />
                         <MdOutlineCancel size={20} />
                       </td>
