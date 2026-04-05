@@ -1,8 +1,12 @@
 
 import Label from "./Label";
+import { PiSealCheckBold } from "react-icons/pi";
+import { MdOutlineEditNote } from "react-icons/md";
+import { LiaWindowClose } from "react-icons/lia";
+
 function Remarks() {
   return (
-    <div className="p-[32px] flex flex-col">
+    <div className="p-[32px] flex flex-col shadow rounded">
       <h1 className="text-[20px] text-[#191C1E] font-bold  ">
         Review Feedback
       </h1>
@@ -58,14 +62,17 @@ function Remarks() {
             ></textarea>
           </div>
           <div className="flex flex-col gap-3">
-            <button className="linear text-white py-2 px-4 rounded-[12px] w-full">
+            <button className="linear text-white font-bold text-[16px] h-[56px] rounded-[12px] gap-[6px] w-full flex flex-row items-center justify-center">
+              <PiSealCheckBold size={20} />
               <span>Approve Submission</span>
             </button>
-            <button className="bg-[#bc480028] text-[#BC4800] py-2 px-4 rounded-[12px] w-full">
-              Request Revision
+            <button className="bg-[#bc480028] font-bold text-[#BC4800] h-[56px] rounded-[12px] w-full flex flex-row gap-[6px] items-center justify-center">
+              <MdOutlineEditNote size={20} />
+              <span>Request Revision</span>
             </button>
-            <button className="text-red py-2 px-4 rounded-[12px] w-full">
-              Reject Submission
+            <button className="text-[#BA1A1A] font-bold h-[56px] rounded-[12px] w-full flex flex-row gap-[6px] items-center justify-center">
+              <LiaWindowClose size={20} />
+              <span>Reject Submission</span>
             </button>
           </div>
         </form>

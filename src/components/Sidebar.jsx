@@ -5,6 +5,7 @@ import { BiCloudUpload } from "react-icons/bi";
 import { MdOutlineSettings } from "react-icons/md";
 import { MdHelpOutline } from "react-icons/md";
 import { MdLogout } from "react-icons/md";
+import { MdOutlineEditNote } from "react-icons/md";
 import home from "../assets/HomeIcon.svg";
 
 function Sidebar(props) {
@@ -50,6 +51,15 @@ function Sidebar(props) {
               <>
                 <FaRegFileLines className={iconClass(isActive)} size={18} />
                 <span className="text-[14px] font-medium">Submissions</span>
+              </>
+            )}
+          </NavLink>
+          <NavLink to="/Reviews" className={(Link) => linkClass(Link)}>
+            {({ isActive }) => (
+              <>
+                <MdOutlineEditNote className={iconClass(isActive)} size={18} />
+                
+                <span className="text-[14px] font-medium">Reviews</span>
               </>
             )}
           </NavLink>
