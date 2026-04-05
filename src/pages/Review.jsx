@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Shortheader from "../components/Innerheader";
@@ -13,7 +13,8 @@ import { LuPrinter } from "react-icons/lu";
 import { IoDocumentText } from "react-icons/io5";
 import { MdOutlineZoomOut } from "react-icons/md";
 import { MdOutlineZoomIn } from "react-icons/md";
-import Label from "../components/Label";
+import File from "../components/File";
+import Remarks from "../components/Remarks";
 
 function AdminSubmission() {
   const statusStyles = {
@@ -85,31 +86,42 @@ function AdminSubmission() {
             </section>
           </div>
           <div className="flex flex-row gap-[32px] mt-[40px] mb-[32px] ">
-            <div className="flex flex-row justify-between items-center w-[629px] h-[56px] bg-[#F3F4F6] px-[24px] rounded-t-xl">
-              <div>
-                <section className="flex flex-row gap-1">
-                  <IoDocumentText size={20} className="text-[#004AC6]" />
-                  <span className="text-[#191C1E] text-[16] font-medium">
-                    Document Preview
+            <div className="flex flex-col">
+              <div className="flex flex-row justify-between items-center w-[629px] h-[56px] bg-[#F3F4F6] px-[24px] rounded-t-xl">
+                <div>
+                  <section className="flex flex-row gap-1">
+                    <IoDocumentText size={20} className="text-[#004AC6]" />
+                    <span className="text-[#191C1E] text-[16] font-medium">
+                      Document Preview
+                    </span>
+                  </section>
+                </div>
+                <div className="flex flex-row gap-[6px] items-center">
+                  <span className="text-[#434655] text-[12px]">
+                    {" "}
+                    Page 1 of 10{" "}
                   </span>
-                </section>
-              </div>
-              <div className="flex flex-row gap-[6px] items-center">
-                <span className="text-[#434655] text-[12px]">
-                  {" "}
-                  Page 1 of 10{" "}
-                </span>
-                <div className="border border-[#c3c6d74e] w-[45px] h-[24px] rounded-[8px] flex items-center justify-center">
-                  <button>
-                    <MdOutlineZoomIn size={16} />
-                  </button>
-                  <button>
-                    <MdOutlineZoomOut size={16} />
-                  </button>
+                  <div className="border border-[#c3c6d74e] w-[45px] h-[24px] rounded-[8px] flex items-center justify-center">
+                    <button>
+                      <MdOutlineZoomIn size={16} />
+                    </button>
+                    <button>
+                      <MdOutlineZoomOut size={16} />
+                    </button>
+                  </div>
                 </div>
               </div>
+
+              <div className="p-[48px] w-[629px] h-[847px] border-2">
+                {/* file preview */}
+                <File />
+              </div>
             </div>
-            <div></div>
+
+            <div>
+              {/* Remarks  */}
+              <Remarks />
+            </div>
           </div>
 
           <div>
