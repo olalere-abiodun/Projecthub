@@ -80,8 +80,8 @@ header {
 
 .progress-bar {
   height: 100%;
-  width: 70%; /* change this to control progress */
-  background-color: #1e4db7; /* blue color */
+  width: 70%; 
+  background-color: #1e4db7; 
   border-radius: 50px;
   transition: width 0.3s ease;
 }
@@ -133,6 +133,13 @@ header {
     background-color: #E7E8EA;
     padding: 13px 16px;
 }
+@media (max-width: 768px) {
+    .shortinput{
+        width: 100%;
+    }
+    
+}
+
 .regSubmit {
     width: 416px;
     height: 44px;

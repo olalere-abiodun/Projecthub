@@ -12,12 +12,12 @@ function Form() {
             <Label text="EMAIL" />
             <Input className="input" type="email" placeholder="john.doe@example.com" />
         </section>
-        <section className="flex flex-row gap-4">
-            <div>
+        <section className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col gap-1">
                 <Label text="PASSWORD" />
                 <Input className="shortinput" type="password" placeholder="••••••••" />
             </div>
-            <div>
+            <div className="flex flex-col gap-1">
                 <Label text="CONFIRM" />
                 <Input className="shortinput" type="password" placeholder="••••••••" />
             </div>

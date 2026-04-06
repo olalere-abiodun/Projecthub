@@ -127,7 +127,7 @@ function AdminSubmission() {
                 </section>
                 <section className="flex flex-col gap-[40px]">
                   <div className="flex flex-row gap-2">
-                    <section className="bg-[#004AC6] w-[30px] h-[30px] rounded-[100%] flex items-center justify-center shadow-0">
+                    <section className="bg-[#004AC6] w-[30px] h-[30px] rounded-[100%] flex items-center justify-center shrink-0">
                       <IoMdCheckmark
                         className="text-white font-bold"
                         size={14}

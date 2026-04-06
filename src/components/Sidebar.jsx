@@ -7,6 +7,7 @@ import { MdHelpOutline } from "react-icons/md";
 import { MdLogout } from "react-icons/md";
 import { MdOutlineEditNote } from "react-icons/md";
 import home from "../assets/HomeIcon.svg";
+import { IoMdClose } from "react-icons/io";
 
 function Sidebar(props) {
   const linkClass = ({ isActive }) =>
@@ -16,7 +17,7 @@ function Sidebar(props) {
   const iconClass = (isActive) =>
     isActive ? "text-[#1D4ED8]" : "text-[#64748B]";
   return (
-    <div className="w-[256px] min-h-screen bg-white px-[21px] py-[17px] hidden md:flex flex-col gap-6 border-r border-[#E2E8F0]">
+    <div className="fixed md:static top-0 left-0 h-screen w-[256px] bg-white z-50 flex flex-col gap-6 border-r border-[#E2E8F0] px-[21px] py-[17px]">
       <header className="flex flex-col gap-6 mb-[40px]">
         <section className="flex flex-row gap-3">
           <div className="bg-[#2563EB] p-[10px] rounded-[12px] h-[40px] w-[40px]">
@@ -58,7 +59,7 @@ function Sidebar(props) {
             {({ isActive }) => (
               <>
                 <MdOutlineEditNote className={iconClass(isActive)} size={18} />
-                
+
                 <span className="text-[14px] font-medium">Reviews</span>
               </>
             )}
